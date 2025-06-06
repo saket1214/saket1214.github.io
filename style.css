@@ -1,0 +1,96 @@
+/* Base Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+/* Container */
+.custom-container {
+  margin: auto;
+  padding: 16px;
+  max-width: 1200px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .custom-container {
+    padding: 8px;
+  }
+}
+
+/* Text Align */
+.custom-center {
+  text-align: center;
+}
+
+/* Buttons */
+.custom-button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.custom-button:hover {
+  background-color: #0b7dda;
+}
+
+/* Colors */
+.custom-blue { background-color: #2196F3; color: white; }
+.custom-red { background-color: #f44336; color: white; }
+.custom-green { background-color: #4CAF50; color: white; }
+.custom-grey { background-color: #9e9e9e; color: white; }
+
+/* Padding Utilities */
+.custom-padding-small { padding: 4px; }
+.custom-padding { padding: 8px; }
+.custom-padding-large { padding: 16px; }
+
+/* Margin Utilities */
+.custom-margin-small { margin: 4px; }
+.custom-margin { margin: 8px; }
+.custom-margin-large { margin: 16px; }
+
+/* Cards */
+.custom-card {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 16px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+/* Rows & Columns */
+.custom-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px;
+}
+
+.custom-col {
+  flex: 1;
+  padding: 8px;
+  min-width: 200px;
+}
+
+/* Responsive Image */
+.custom-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

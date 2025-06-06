@@ -1,8 +1,160 @@
-<html>
+<!-- <html>
 <head>
   <title>Home</title>
 </head>
 <body>
   <h1>Go Seahawks</h1>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body, html {
+      height: 100%;
+      font-family: 'Shadows Into Light', cursive;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url("photos/back1.jpg");
+      min-height: 75vh;  /* 75% of viewport height */
+      position: relative;
+      color: white;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .col {
+      flex: 1;
+    }
+
+    .bg-black {
+      background-color: black;
+      color: white;
+    }
+
+    .bg-light-grey {
+      background-color: #f1f1f1;
+    }
+
+    .padding {
+      padding: 16px;
+    }
+
+    .padding-large {
+      padding: 32px;
+    }
+
+    .button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #444;
+    }
+
+    .tag {
+      background-color: black;
+      color: white;
+      padding: 4px 8px;
+      font-weight: bold;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    .center {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Top Navigation -->
+<div class="bg-black padding row">
+  <div class="col center"><a href="#" class="button">HOME</a></div>
+  <div class="col center"><a href="#about" class="button">ABOUT</a></div>
+  <div class="col center"><a href="#resume" class="button">RESUME</a></div>
+  <div class="col center"><a href="#where" class="button">PHOTOS</a></div>
+</div>
+
+<!-- Header -->
+<header class="bgimg">
+  <!-- <div style="position:absolute; bottom:0; left:0; padding:16px;">
+    <span class="tag">Open from 6am to 5pm</span>
+  </div> -->
+  <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center;">
+    <span style="font-size:90px">saket<br>gollapudi</span>
+  </div>
+  <!-- <div style="position:absolute; bottom:0; right:0; padding:16px;">
+    <span></span>
+  </div> -->
+</header>
+
+<!-- Page Content -->
+<div class="bg-light-grey padding-large">
+
+<!-- About Section -->
+<div id="about" class="center" style="max-width:700px; margin:auto">
+  <h5 class="padding"><span class="tag">WHO IS HE?</span></h5>
+  <p>INSERT HERE</p>
+  <div style="border-left:4px solid #ccc; padding-left:16px;">
+    <p><i>INSERT</i></p>
+    <p>INSERT</p>
+  </div>
+  <!-- <img src="" style="width:100%; margin-top:16px;"> -->
+    <p>INSERT RESUME</p>
+</div>
+
+<!-- Resume Section -->
+<div id="resume" class="center" style="max-width:700px; margin:auto">
+  <h5 class="padding-large"><span class="tag">photos</span></h5>
+</div>
+
+<!-- Where Section -->
+<div id="where" class="center" style="max-width:700px; margin:auto">
+  <h5 class="padding-large"><span class="tag">projects</span></h5>
+  <!-- <img src="" style="width:100%;"> -->
+
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer class="center bg-light-grey padding">
+  <p>Go Seahawks</p>
+</footer>
+
+<script>
+function openMenu(evt, menuName) {
+  const x = document.getElementsByClassName("resume");
+  for (let i = 0; i < x.length; i++) x[i].style.display = "none";
+  document.getElementById(menuName).style.display = "block";
+}
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("photos").style.display = "block";
+});
+</script>
+
 </body>
 </html>
