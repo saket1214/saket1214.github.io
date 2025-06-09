@@ -94,3 +94,20 @@ html, body {
   height: auto;
   display: block;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 1 100%; /* Allows full width on small screens */
+  text-align: center;
+  padding: 8px;
+}
+
+@media (min-width: 600px) {
+  .col {
+    flex: 1;
+  }
+}
