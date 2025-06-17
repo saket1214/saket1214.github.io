@@ -3,8 +3,11 @@ website: www.saketgollapudi.com<br />
 
 Repo: https://github.com/saket1214/saket1214.github.io<br />
 
+Tools used to build website:
+Website built with HTML/CSS framework (Did not use jekyll or any other static site generator even though jekyll is installed). Website is based off of online template found. Googled for cool website templates and found this: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_cafe. Modified the template to incorporate my features <br />
+ChatGPT was used for stylistic elements of the website. Prompts used are mentioned below. <br />
 
-HTML insp. Googled for cool website templates and found this: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_cafe<br />
+Used cloudfare to get TLD. <br />
 
 When I used the dig command on saketgollapudi.com (dig @8.8.8.8 saketgollapudi.com and dig saketgollapudi.com), I found that 8.8.8.8 returned the updated DNS information before my local DNS server. this is probably because public resolvers refresh their cache more frequently resulting in faster updates.<br />
 
