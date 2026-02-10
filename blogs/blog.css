@@ -1,0 +1,225 @@
+/* =========================
+   Blog Base Reset
+   ========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --seahawks-navy: #002244;
+  --seahawks-navy-hover: #0b3a5c;
+
+  /* Darker Seahawks-style accent green */
+  --seahawks-green: #4b7f52;
+
+  /* Shadow tuning */
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-medium: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: 'Shadows Into Light', cursive;
+  background-color: #f1f1f1;
+}
+
+/* =========================
+   Layout
+   ========================= */
+.blog-container {
+  margin: auto;
+  padding: 16px;
+  max-width: 900px;
+}
+
+@media (max-width: 600px) {
+  .blog-container {
+    padding: 8px;
+  }
+}
+
+/* =========================
+   Navigation
+   ========================= */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 1 100%;
+  text-align: center;
+  padding: 8px;
+}
+
+@media (min-width: 600px) {
+  .col {
+    flex: 1;
+  }
+}
+
+.bg-navy {
+  background-color: var(--seahawks-navy);
+  color: white;
+  box-shadow: var(--shadow-medium);
+}
+
+.padding {
+  padding: 16px;
+}
+
+/* =========================
+   Buttons (Modern Sports Style)
+   ========================= */
+.button {
+  background: linear-gradient(
+    135deg,
+    var(--seahawks-navy),
+    var(--seahawks-navy-hover)
+  );
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 999px;
+  box-shadow: 0 6px 0 #00162e, var(--shadow-soft);
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 #00162e, var(--shadow-medium);
+}
+
+.button:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 0 #00162e;
+}
+
+/* Accent button variant */
+.button--accent {
+  background: linear-gradient(
+    135deg,
+    var(--seahawks-green),
+    #3f6b46
+  );
+  box-shadow: 0 6px 0 #2e5236, var(--shadow-soft);
+}
+
+.button--accent:hover {
+  box-shadow: 0 8px 0 #2e5236, var(--shadow-medium);
+}
+
+/* =========================
+   Blog Cards (Index Page)
+   ========================= */
+.blog-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 24px;
+  border-left: 6px solid var(--seahawks-green);
+}
+
+.blog-card h3 {
+  margin-bottom: 12px;
+}
+
+.blog-card p {
+  opacity: 0.8;
+}
+
+/* =========================
+   Blog Post Styling
+   ========================= */
+.blog-post {
+  background-color: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-medium);
+}
+
+.blog-post h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.blog-post h3 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  color: var(--seahawks-navy);
+}
+
+.blog-post h3::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 4px;
+  margin-top: 6px;
+  background-color: var(--seahawks-green);
+  border-radius: 2px;
+}
+
+.blog-post p {
+  margin-bottom: 18px;
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer {
+  text-align: center;
+  padding: 16px;
+  opacity: 0.75;
+  color: #444;
+}
+
+/* =========================
+   Nav Spacing Fix
+   ========================= */
+.nav-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* =========================
+   Page Title Spacing
+   ========================= */
+.page-title {
+  text-align: center;
+  margin: 32px 0 40px;
+}
+
+/* =========================
+   Blog Card Spacing Fix
+   ========================= */
+.blog-card p {
+  margin-bottom: 20px;
+}
+
+.blog-card .button {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+/* =========================
+   Footer Spacing
+   ========================= */
+footer {
+  margin-top: 48px;
+}
